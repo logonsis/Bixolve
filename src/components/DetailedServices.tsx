@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-vcan import { Rocket, Wrench, Users, Search, CheckCircle } from 'lucide-react';
+import { Rocket, Wrench, Users, Search, CheckCircle } from 'lucide-react';
 
 const servicesData = [
   {
