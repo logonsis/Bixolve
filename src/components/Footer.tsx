@@ -1,5 +1,5 @@
 import { Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from 'lucide-react';
-import bixsolveLogo from '@/assets/bixsolve-logo.jpeg';
+import bixolveLogo from '@/assets/bixolve-logo.jpeg';
 
 const footerLinks = {
   services: [
@@ -25,7 +25,7 @@ const socialLinks = [
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Mail, href: 'mailto:info@bixsolve.com', label: 'Email' },
+  { icon: Mail, href: 'mailto:info@bixolve.com', label: 'Email' },
 ];
 
 const Footer = () => {
@@ -45,13 +45,13 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center gap-2 mb-6">
-              <img src={bixsolveLogo} alt="Bixsolve Logo" className="w-10 h-10 rounded-lg object-contain bg-white" />
+              <img src={bixolveLogo} alt="Bixolve Logo" className="w-10 h-10 rounded-lg object-contain bg-white" />
               <span className="font-bold text-xl">
-                Bixsolve<span className="text-accent"> IT</span>
+                Bixolve<span className="text-accent"> IT</span>
               </span>
             </a>
             <p className="text-primary-foreground/70 mb-4 max-w-sm">
-              Bixsolve IT Solutions | Your Trusted Partner for Seamless Odoo Solutions. 
+              Bixolve IT Solutions | Your Trusted Partner for Seamless Odoo Solutions. 
               Premier Odoo ERP Implementation & Post-Implementation Support across India & UAE.
             </p>
             
@@ -61,7 +61,7 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-accent mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-sm font-semibold text-primary-foreground">India Office</p>
-                  <p className="text-sm text-primary-foreground/70">Bixsolve IT Solutions</p>
+                  <p className="text-sm text-primary-foreground/70">Bixolve IT Solutions</p>
                   <p className="text-sm text-primary-foreground/70">+91 8157822165</p>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Bixsolve IT Solutions. All rights reserved.
+            © {new Date().getFullYear()} Bixolve IT Solutions. All rights reserved.
           </p>
           <p className="text-primary-foreground/60 text-sm">
             Crafted with expertise for your business success.

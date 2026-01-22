@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import bixsolveLogo from '@/assets/bixsolve-logo.jpeg';
+import bixolveLogo from '@/assets/bixolve-logo.jpeg';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -56,9 +56,9 @@ const Navigation = () => {
             }}
             className="flex items-center gap-2"
           >
-            <img src={bixsolveLogo} alt="Bixsolve Logo" className="w-10 h-10 rounded-lg object-contain" />
+            <img src={bixolveLogo} alt="Bixolve Logo" className="w-10 h-10 rounded-lg object-contain" />
             <span className={`font-bold text-xl transition-colors ${isScrolled ? 'text-primary' : 'text-primary-foreground'}`}>
-              Bixsolve<span className="text-accent"> IT</span>
+              Bixolve<span className="text-accent"> IT</span>
             </span>
           </a>
 

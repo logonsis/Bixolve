@@ -45,7 +45,7 @@ const ExpertiseSection = () => {
                 <span className="gradient-text">Seamless Odoo Solutions</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Bixsolve stands as a premier and trusted Odoo partner, consistently delivering top-notch 
+                Bixolve stands as a premier and trusted Odoo partner, consistently delivering top-notch 
                 customization and implementation services. Our team comprises highly skilled technical 
                 experts dedicated to developing, implementing, and designing ERP solutions that provide 
                 unparalleled benefits. Operating across India & UAE, we help clients attain their strategic 

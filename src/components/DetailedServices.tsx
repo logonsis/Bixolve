@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Rocket, Wrench, HeartHandshake, Search, CheckCircle } from 'lucide-react';
+vcan import { Rocket, Wrench, Users, Search, CheckCircle } from 'lucide-react';
 
 const servicesData = [
   {
@@ -26,7 +26,7 @@ const servicesData = [
   },
   {
     id: 'support',
-    icon: HeartHandshake,
+    icon: Users,
     title: 'Support & Maintenance',
     items: [
       { title: 'Dedicated Support Plans', description: 'Choose from flexible support packages that fit your needs' },
