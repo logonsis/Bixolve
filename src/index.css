@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Odoo ERP Professional Color System */
+    --background: 210 17% 98%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    /* Deep Navy Blue - Primary Brand */
+    --primary: 210 29% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Lighter Navy for Secondary */
+    --secondary: 210 25% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted Grays */
+    --muted: 210 14% 93%;
+    --muted-foreground: 210 10% 45%;
+
+    /* Odoo Orange Accent */
+    --accent: 28 80% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 28 80% 52%;
+
+    --radius: 0.75rem;
+
+    /* Custom Design Tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(210 29% 20%) 0%, hsl(210 35% 15%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(28 80% 52%) 0%, hsl(24 85% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 17% 97%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(210 29% 24% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(210 29% 24% / 0.12);
+    --shadow-elevated: 0 20px 50px -15px hsl(210 29% 24% / 0.2);
+    --shadow-accent: 0 8px 25px -5px hsl(28 80% 52% / 0.35);
+
+    /* Sidebar defaults */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 35% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 30% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 30% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 28 80% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 25% 25%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 210 25% 18%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 28 80% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 25% 20%;
+    --input: 210 25% 20%;
+    --ring: 28 80% 52%;
+
+    --sidebar-background: 210 30% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 28 80% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 25% 18%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 210 25% 18%;
+    --sidebar-ring: 28 80% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
